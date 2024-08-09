@@ -1,0 +1,11 @@
+version: "3.1"
+networks:
+  yaswanth:
+    driver: bridge
+services:
+  java:
+    image: yaswanthreddy1007/javawebapp:TAG
+    ports:
+    - 8081:8080
+    networks:
+    - gova
